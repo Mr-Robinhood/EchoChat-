@@ -19,7 +19,7 @@ const io = new Server(server);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const botName = "ChatCord Bot";
+const botName = "EchoChat Bot";
 
 io.on('connection', (socket) => {
   console.log('a user connected');
@@ -32,7 +32,7 @@ io.on('connection', (socket) => {
 
     socket.broadcast
       .to(user.room)
-      .emit('message', formatMessage(botName, `${user.username} has joined the chat`));
+      .emit('message', formatMessage(botName, `${user.username} has joined the room`));
 
    
     io.to(user.room).emit('roomUsers', {
@@ -57,7 +57,7 @@ io.on('connection', (socket) => {
     if (user) {
       io.to(user.room).emit(
         'message',
-        formatMessage(botName, `${user.username} has left the chat`)
+        formatMessage(botName, `${user.username} has left the room`)
       );
 
      

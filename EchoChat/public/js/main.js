@@ -32,7 +32,7 @@ chatForm.addEventListener('submit', (e) => {
 
   
   const msg = e.target.elements.msg.value;
-r
+
   socket.emit('chatMessage', msg);
 
   e.target.elements.msg.value = '';
