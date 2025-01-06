@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-  --primary-color: #4a90e2;
+  --primary-color: #07274d;
   --secondary-color: #50e3c2;
   --background-color: #f5f7fa;
   --text-color: #333;
   --header-color: #fff;
-  --button-color: #4a90e2;
+  --button-color: #07274d;
   --button-text-color: #fff;
   --input-background: #fff;
   --input-border: #ddd;

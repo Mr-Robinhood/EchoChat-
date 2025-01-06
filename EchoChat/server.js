@@ -19,7 +19,7 @@ const io = new Server(server);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const botName = "EchoChat Bot";
+const botName = "ChatCord Bot";
 
 io.on('connection', (socket) => {
   console.log('a user connected');
